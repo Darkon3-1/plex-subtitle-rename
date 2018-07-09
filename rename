@@ -1,4 +1,4 @@
-
+#!/usr/bin/python
 import os, re, sys, getopt
 args = getopt.getopt(sys.argv, " ")[1]
 
@@ -10,7 +10,7 @@ if len(args) < 4:
 
 # add the correct extension with lang code
 subExtenstion = '.en.srt' if len(args) == 4 else ".%s.srt" % args[4]
-
+print(directory)
 # create the season
 season = "0"+ args[2] if len(args[2]) == 1 else args[2]
 directory = args[1]
